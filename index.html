@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_286218dd39f61ab15b308d2c06f42eda {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_286218dd39f61ab15b308d2c06f42eda" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_286218dd39f61ab15b308d2c06f42eda = L.map(
+                "map_286218dd39f61ab15b308d2c06f42eda",
+                {
+                    center: [10.431733581296413, 76.07851355576543],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e5e9f13327d19e3fc13456f518a69bd7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+            var marker_3a88e64f5b3479a7201b7c54ed5fe32d = L.marker(
+                [10.431733581296413, 76.07851355576543],
+                {}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+        var popup_d9883aa79cf98c17a9227a7690ec85a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18690005a000cc83763bf8bfe725bd05 = $(`<div id="html_18690005a000cc83763bf8bfe725bd05" style="width: 100.0%; height: 100.0%;">Start / End Point</div>`)[0];
+            popup_d9883aa79cf98c17a9227a7690ec85a9.setContent(html_18690005a000cc83763bf8bfe725bd05);
+        
+
+        marker_3a88e64f5b3479a7201b7c54ed5fe32d.bindPopup(popup_d9883aa79cf98c17a9227a7690ec85a9)
+        ;
+
+        
+    
+    
+            marker_3a88e64f5b3479a7201b7c54ed5fe32d.bindTooltip(
+                `<div>
+                     Start / End Point
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0260b21de8f565eb6ef5eee936731d22 = L.marker(
+                [10.445217432056236, 76.07207114873722],
+                {}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+        var popup_77d22a6a7af37c3290f63e4d5465ab97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be3af9e05c8027c76e1b2507b590806e = $(`<div id="html_be3af9e05c8027c76e1b2507b590806e" style="width: 100.0%; height: 100.0%;">Junction at North</div>`)[0];
+            popup_77d22a6a7af37c3290f63e4d5465ab97.setContent(html_be3af9e05c8027c76e1b2507b590806e);
+        
+
+        marker_0260b21de8f565eb6ef5eee936731d22.bindPopup(popup_77d22a6a7af37c3290f63e4d5465ab97)
+        ;
+
+        
+    
+    
+            marker_0260b21de8f565eb6ef5eee936731d22.bindTooltip(
+                `<div>
+                     Junction at North
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff3724a9cab36e9b34d4b2d8a5a1f650 = L.marker(
+                [10.449969131668047, 76.07900912553683],
+                {}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+        var popup_0c6509794b4c6367e2bd12432cba19d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a7af5d20fa3a8469ddc900bad5143f9 = $(`<div id="html_2a7af5d20fa3a8469ddc900bad5143f9" style="width: 100.0%; height: 100.0%;">Junction at North East</div>`)[0];
+            popup_0c6509794b4c6367e2bd12432cba19d2.setContent(html_2a7af5d20fa3a8469ddc900bad5143f9);
+        
+
+        marker_ff3724a9cab36e9b34d4b2d8a5a1f650.bindPopup(popup_0c6509794b4c6367e2bd12432cba19d2)
+        ;
+
+        
+    
+    
+            marker_ff3724a9cab36e9b34d4b2d8a5a1f650.bindTooltip(
+                `<div>
+                     Junction at North East
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36a67de12861eb8296a14d3151f55889 = L.marker(
+                [10.438922333523458, 76.08404741821272],
+                {}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+        var popup_c2e10ed24c6c5ca9966b40bb932c64f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e977125d1881e5f309e893b320b3e5c = $(`<div id="html_2e977125d1881e5f309e893b320b3e5c" style="width: 100.0%; height: 100.0%;">Junction at South East</div>`)[0];
+            popup_c2e10ed24c6c5ca9966b40bb932c64f6.setContent(html_2e977125d1881e5f309e893b320b3e5c);
+        
+
+        marker_36a67de12861eb8296a14d3151f55889.bindPopup(popup_c2e10ed24c6c5ca9966b40bb932c64f6)
+        ;
+
+        
+    
+    
+            marker_36a67de12861eb8296a14d3151f55889.bindTooltip(
+                `<div>
+                     Junction at South East
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_294101c5c0515d15acd83c940477e652 = L.marker(
+                [10.436323029857853, 76.08103270210337],
+                {}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+        var popup_6eeb088bcc863667e96cf4f61490c8d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f24f75fb06d12045f2099c882ea2ffda = $(`<div id="html_f24f75fb06d12045f2099c882ea2ffda" style="width: 100.0%; height: 100.0%;">Junction towards West</div>`)[0];
+            popup_6eeb088bcc863667e96cf4f61490c8d3.setContent(html_f24f75fb06d12045f2099c882ea2ffda);
+        
+
+        marker_294101c5c0515d15acd83c940477e652.bindPopup(popup_6eeb088bcc863667e96cf4f61490c8d3)
+        ;
+
+        
+    
+    
+            marker_294101c5c0515d15acd83c940477e652.bindTooltip(
+                `<div>
+                     Junction towards West
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ec9fe53f9665671f003c3bd8c675b0e = L.marker(
+                [10.432545877878828, 76.08227162654471],
+                {}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+        var popup_47de890da571137075b189b2feeb3113 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7dc99753679fd7147a77673ade55e31 = $(`<div id="html_d7dc99753679fd7147a77673ade55e31" style="width: 100.0%; height: 100.0%;">Junction towards West South</div>`)[0];
+            popup_47de890da571137075b189b2feeb3113.setContent(html_d7dc99753679fd7147a77673ade55e31);
+        
+
+        marker_6ec9fe53f9665671f003c3bd8c675b0e.bindPopup(popup_47de890da571137075b189b2feeb3113)
+        ;
+
+        
+    
+    
+            marker_6ec9fe53f9665671f003c3bd8c675b0e.bindTooltip(
+                `<div>
+                     Junction towards West South
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e14049e6d24b698feca538f8bf2bd20 = L.marker(
+                [10.431774196053658, 76.07843096081636],
+                {}
+            ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+    
+        var popup_a580a23577044b1ec3809af1a38351e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ed11eac041234b90ec9a85cd5f8b899 = $(`<div id="html_3ed11eac041234b90ec9a85cd5f8b899" style="width: 100.0%; height: 100.0%;">Return to Start / End</div>`)[0];
+            popup_a580a23577044b1ec3809af1a38351e9.setContent(html_3ed11eac041234b90ec9a85cd5f8b899);
+        
+
+        marker_7e14049e6d24b698feca538f8bf2bd20.bindPopup(popup_a580a23577044b1ec3809af1a38351e9)
+        ;
+
+        
+    
+    
+            marker_7e14049e6d24b698feca538f8bf2bd20.bindTooltip(
+                `<div>
+                     Return to Start / End
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_6b58254529157f0826d692459422c31d = L.polyline.antPath(
+              [[10.431733581296413, 76.07851355576543], [10.445217432056236, 76.07207114873722], [10.449969131668047, 76.07900912553683], [10.438922333523458, 76.08404741821272], [10.436323029857853, 76.08103270210337], [10.432545877878828, 76.08227162654471], [10.431774196053658, 76.07843096081636]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_286218dd39f61ab15b308d2c06f42eda);
+        
+</script>
+</html>
